@@ -1,0 +1,28 @@
+<h2>Employee Details</h2>
+
+<hr>
+<div *ngIf="employee">
+    <div>
+        <table class="table" style="width: 30%;">
+            <tr>
+                <th>Employee ID </th>
+                <td>{{employee.id}}</td>
+            </tr>
+            <tr>
+                <th>First Name </th>
+                <td>{{employee.firstName}}</td>
+            </tr>
+            <tr>
+                <th>Last Name </th>
+                <td>{{employee.lastName}}</td>
+            </tr>
+            <tr>
+                <th>Email ID </th>
+                <td>{{employee.emailId}}</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <br />
+    <button (click)="list()" class="btn btn-primary">Back to Employee List</button>
